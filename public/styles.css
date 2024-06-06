@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+}
+
+#vote-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card button {
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+}
+
+.card button:active {
+    transform: translateY(1px);
+}
+
+.card .vote-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.card .vote-btn:hover {
+    background-color: #45a049;
+}
+
+.card .undo-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.card .undo-btn:hover {
+    background-color: #e53935;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
